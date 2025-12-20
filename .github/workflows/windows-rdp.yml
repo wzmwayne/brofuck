@@ -27,7 +27,7 @@ jobs:
       - name: Establish Tailscale Connection
         shell: pwsh
         env:
-          TAILSCALE_AUTH_KEY: ${{ secrets.TAILSCALE_AUTH_KEY }}
+          TAILSCALE_AUTH_KEY: tskey-auth-kSaBSX3Np411CNTRL-QWGeegkRnYY8TjgPFzDqYYZxcF6Lc2csS
         run: .github/workflows/scripts/win-establish-ts.ps1
 
       - name: Verify RDP Accessibility
